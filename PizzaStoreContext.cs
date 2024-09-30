@@ -3,8 +3,6 @@ using Microsoft.EntityFrameworkCore;
 namespace BlazingPizza;
 
 public class PizzaStoreContext : DbContext
-{
-  public class PizzaStoreContext : DbContext
   {
         public PizzaStoreContext(
             DbContextOptions options) : base(options)
@@ -30,6 +28,3 @@ public class PizzaStoreContext : DbContext
         }
 
   }
-
-  public DbSet<PizzaSpecial> Specials { get; set; }
-}
